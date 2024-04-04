@@ -1,0 +1,30 @@
+
+h1{
+    font-weight: normal;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    color: #a34ef7;
+    font-size: 40px;
+    padding: 4em 1em 55em;
+    }
+
+p1{
+
+    padding: 80px;
+    }
+
+p2{
+
+    padding: 60px;
+}
+
+body {
+/* Местоположение фоновой картинки */   background-image: url("f11.jpg");
+/* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */   background-position: center center;
+/* Фон не повторяется */   background-repeat: no-repeat;
+/* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */   background-attachment: fixed;
+/* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/   background-size: cover;
+/* Цвет фона, который будет отображаться при загрузке фоновой картинки*/   background-color: #1c4b4b;
+    }

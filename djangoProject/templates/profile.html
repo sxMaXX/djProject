@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "profile.css" %}">
+    <title>SY Django-проект: Профиль</title>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row" style="margin-top: 40px">
+     <div class="col-md-1"></div>
+     <div class="col-md-4">
+            <div class="card mb-2">
+                <img class="card-img-top" src="{% static 'img/' %}{{ profile_image }}" alt="profile image">
+            </div>
+         <div>
+             <form method="post" enctype="multipart/form-data">
+                 {% csrf_token %}
+                 {{ forms.as_p }}
+                 <button id="load" class="btn btn-secondary btn-block" login="load" type="submit">Загрузить изображение</button>
+             </form>
+         </div>
+
+     </div>
+     <div class="col-md-1"></div>
+     <div class="col-md-6">
+         <div class="row justify-content-between" style="margin: 10px">
+             <h3>Добро пожаловать, {{ user.name }}!</h3>
+                 <form action="" method="post">
+                     <button type="submit" name="logout" class="btn btn-outline-secondary"> << Выйти >> </button>
+                 </form>
+         </div>
+         <div class="row justify-content-center" style="margin-top: 50px">
+            <h3> Перейти в <a href="https://t.me/SviatlanaYBot"> Телеграм бот</a></h3>
+         </div>
+         <form action="" method="post">
+                <button type="submit" name="tbot" class="btn btn-primary btn-block"> {{ user.bot_btn }} </button>
+         </form>
+         <div class="container" style="font-size: 20px; font-weight: bolder; line-height: 150%; margin-top: 10px">
+             Набирай команду  <span style="font-weight: bolder; color: darkslateblue"> /pay </span>  в телеграм боте по ссылке выше и тестируй оплату картой. 
+             Баланс бота составит сумму платежей всех пользователей с момента последнего старта бота. 
+             Его начальный баланс равен 0 рублей.
+         </div>
+          <div class="container" style="font-size: 20px; line-height: 150%; margin-top: 40px">
+             А теперь <a href="https://sviatlanayermalinskaya.github.io/JS/"> БОНУС</a> - небольшая игра, написанная на JavaScript.
+         </div>
+     </div>
+</div>
+</div>
+
+</body>
+</html>

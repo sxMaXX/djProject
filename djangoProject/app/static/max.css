@@ -1,0 +1,50 @@
+h1{
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    color: #ec0841;
+    font-size: 70px;
+    text-shadow: 2px 2px 2px #22dc13;
+    padding: 20px 1px 1px;
+}
+
+
+h2{
+    font-weight: bolder;
+    font-family: 'Merriweather', serif;
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    color: #a34ef7;
+    font-size: 50px;
+    text-shadow: 2px 2px 2px #0e0a0c;
+    padding: 40px 1px 1px;
+}
+
+input{
+    padding: 5px 5px 5px;
+}
+
+button{
+    background-color: #ec0841;
+    padding: 11px;
+    font-size: 20px;
+}
+
+body {
+    text-align: center;
+    /* Местоположение фоновой картинки */
+    background-image: url("222.jpg");
+    /* Фоновое изображение выровнено по центру в горизонтальной и вертикальной плоскостях */
+    background-position: center center;
+    /* Фон не повторяется */
+    background-repeat: no-repeat;
+    /* Фон зафиксирован в области просмотра и потому не двигается, когда высота контента превышает высоту изображения */
+    background-attachment: fixed;
+    /* Это свойство заставляет фон менять масштаб при изменении размеров содержащего его контейнера*/
+    background-size: cover;
+    /* Цвет фона, который будет отображаться при загрузке фоновой картинки*/
+    background-color: #1c4b4b;
+}
