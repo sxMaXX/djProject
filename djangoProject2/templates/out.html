@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProileFile</title>
+</head>
+<div>Ваш логин {{ user.name }}</div>
+<body class="d-flex justify-content-center align-items-center flex-column" 
+      style="background-color: darkslategray; height: 90vh">
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+   {{ form.as_p }}
+  <button class="btn btn-success" type="submit">Загрузить</button>
+  <button class="btn btn-info" onclick="history.back()">Назад</button>
+</form>
+<br>
+<!--
+ <img src={% static fname %} alt="{{ image.name }}">
+ -->
+<img src={% static 'imgs/' %}{{ fname }} alt="{{ image.name }}">
+</body>
+</html>
