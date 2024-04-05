@@ -1,0 +1,85 @@
+.d1 {
+    position: absolute;
+    top: 10vh;
+    left: 1000px;
+    height: 75px;
+    width: 300px;
+    font-size: 25px;
+    background: #a273d0;
+    background-size: cover;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.inp {position: absolute;
+    top: 80vh;
+    left: 600px;
+    height: 50px;
+    width: 300px;
+
+}
+
+.d2 {
+    position: absolute;
+    top: 90vh;
+    left: 600px;
+    height: 50px;
+    width: 300px;
+    font-size: 25px;
+}
+
+img {
+    position: absolute;
+    left: 10vw;
+    top: 50vh;
+    height: 40vh;
+    width: 20vw;
+    border-radius: 50vw;
+}
+
+.d3 {
+    position: absolute;
+    top: 20vh;
+    left: 270px;
+    height: 75px;
+    width: 300px;
+    font-size: 25px;
+}
+
+button {
+    position: absolute;
+    left: 80px;
+    top: 35vh;
+    height: 8vh;
+    width: 9vw;
+    font-size: 25px;
+    background: #a34ef7;
+    border-radius: 15px;
+}
+
+.d4 {
+    position: absolute;
+    top: 40vh;
+    left: 1000px;
+    height: 75px;
+    width: 300px;
+    font-size: 25px;
+}
+
+.d5 {
+    position: absolute;
+    top: 30vh;
+    left: 1000px;
+    height: 75px;
+    width: 300px;
+    font-size: 25px;
+}
+
+body {
+    background-image: url("444.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #1c4b4b;
+}

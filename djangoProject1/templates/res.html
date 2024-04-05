@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="{% static 'res.css' %}" type="text/css">
+</head>
+<body>
+<form method="post" action="">
+    <p1>
+    <input id="login" name="login" placeholder="Ведите логин">
+    <input type=password id="pass" name="pas" placeholder="Введите пароль">
+    <input type=password id="rpass" placeholder="Повтор пароля">
+    <input id="ph" name="ph" placeholder="Введите email">
+    <button id="reg">Зарегистрироваться</button>
+    <h5 id="ret">{{ form }}</h5>    
+    </p1>
+</form>
+<h1>Регистрация</h1>
+
+<script>
+    reg.onclick = (e) => {
+        if (login.value === '') {
+            e.preventDefault()
+            ret.innerHTML = "Логин не задан"
+            return
+        }
+        if (ph.value === '') {
+            e.preventDefault()
+            ret.innerHTML = "Почта не задана"
+        }
+        else {
+            if (pass.value === '') {
+                e.preventDefault()
+                ret.innerHTML = "Пароль не задан"
+            }
+            else {
+                if (pass.value !== rpass.value) {
+                    e.preventDefault()
+                    ret.innerHTML = "Пароли не совпадают:<br> повторите ввод"
+                    rpass.value = ''
+                }
+            }
+        }
+    }
+</script>
+</body>
+</html>
